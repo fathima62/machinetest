@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-gxv&cnmat-8mf-q2)tb-0_ro6z)%cgx$==4itua63vnmkzf9ex
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['machinetest.herokuapp.com']
 
 
 # Application definition
@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'machinetest.urls'
@@ -121,6 +121,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'signup/static'),
+    os.path.join(BASE_DIR,'no_of_notes/static'),
 ]
 
 # Default primary key field type
