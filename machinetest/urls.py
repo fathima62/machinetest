@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('sign_up/',include('signup.urls')),
     path('totalnotes/',include('no_of_notes.urls')),
+    path('peakelements/',include('peak_elements.urls')),
 ]
